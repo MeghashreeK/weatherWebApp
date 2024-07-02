@@ -1,0 +1,143 @@
+*{
+    margin: 0px;
+    padding:0px;
+    font-family: 'Poppins',sans-serif;
+    
+}
+body{
+    background-color: rgb(22, 179, 179);  
+}
+.maincontainer{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    margin:40px;
+    justify-content: center;
+    align-items: center;
+}
+.search{
+    display: flex;
+    gap:10px;
+    justify-content: center;
+    align-items: center;
+}
+input{
+   width:500px;
+   height: 50px;
+   border: none;
+   border-radius: 50px;
+   padding-left: 15px;
+   color:rgb(102, 96, 96)
+  
+}
+button{
+    
+    background-color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    height: 40px;
+    width: 40px;
+    
+}
+img{
+    width:20px;
+    height:20px;
+}
+input::placeholder{
+    font-size: 16px;
+}
+input:focus{
+outline: none;
+}
+.weather{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:#FFFFFF;
+    margin-top: 50px;
+    display: none;
+}
+.weather-icon{
+    width: 200px;
+    height:200px;
+}
+.temp{
+    font-size: 80px;
+}
+.city{
+    font-size: 40px;
+}
+.details{
+    display: flex;
+    gap:100px;
+}
+
+.col{
+    margin-top: 30px;
+    display: flex;
+    gap:10px;
+    align-items: center;
+    text-align: left;
+    font-weight: bold;
+}
+.col img{
+    width:40px;
+    height:40px;
+}
+.c1{
+    font-size: 15px;
+}
+
+@media only screen and (max-width:570px) {
+    input{
+        width:300px;
+     }
+     .details{
+        gap:50px;
+     }
+}
+@media only screen and (max-width:361px) {
+    input{
+        width:200px;
+     }
+     .details{
+        gap:50px;
+     }
+}
+@media only screen and (min-height:1000px) {
+    .weather-icon{
+        width: 350px;
+        height:350px;
+    }
+    .col img{
+        width:80px;
+        height:80px;
+    }
+    .col{
+        font-size: 25px;
+    }
+    .temp{
+        font-size: 200px;
+    }
+    .city{
+        font-size: 80px;
+    }
+    input::placeholder{
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width:260px) {
+    input{
+        width:120px;
+     }
+     .details{
+        gap:20px;
+     }
+}
